@@ -6,6 +6,7 @@
 .bg-theme-body{background-image: url('../img/main-background.png');}
 .bg-home{background-image: url('../img/Banner-home.jpg');height: 90vh;background-repeat: no-repeat;background-position: center;background-size: 100%;}
 .bg-membership{background-image: url('../img/banner-member.jpg');height: 90vh;background-repeat: no-repeat;background-position: center;background-size: 100%;}
+.bg-about-banner{background-image: url('../img/banner-about.jpg');height: 90vh;background-repeat: no-repeat;background-position: center;background-size: 100%;}
 .bg-theme-main{background-image: url('../img/main-background.png');}
 /*.bg-theme-main{background: linear-gradient(to right, #2727a3 , #131232);}*/
 /*.bg-theme-body{background: linear-gradient(to bottom right, #153453 , #12151c, #153453);}*/
@@ -70,6 +71,7 @@
 .decor2-low{background-image: url('../img/Decor2.png');height: 70px;background-size: 100%;background-position: top;}
 .btn-primary{text-transform: uppercase;font-size:17px;color: #000;background-color: #040c3a !important;border-radius: 8px;font-weight: 400;padding: 15px 0px;}
 .bg-parallax{background-image: url('../img/parallax.png');background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size:cover;padding:180px 0px;}
+.bg-parallax-about{background-image: url('../img/parallax-about.png');background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size:cover;padding:180px 0px;}
 #crad1{background: url('../img/card1.png');background-position: center;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
 #crad2{background: url('../img/card2.png');background-position: center;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
 #crad3{background: url('../img/card3.png');background-position: center;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
@@ -82,7 +84,7 @@
 
 /*mobile only*/
 @media only screen and (max-width: 600px) {
-    .bg-home,.bg-membership{background-size: 400%;}
+    .bg-home,.bg-membership,.bg-about-banner{background-size: 400%;}
     .decor1{background-image: url('../img/decor.png');height: 60px;background-size: 100%;background-position: top;}
     .decor1-inside{height: 50px;}
     .font-60{font-size: 45px;}.font-85{font-size: 50px;}
@@ -90,6 +92,7 @@
     .media-pt-3{margin-top: 30px;}
     .carousel-indicators{bottom: -55px !important;}
     .media-p-0{padding: 0px !important;}
+    .pt-sm-2{padding-top: 2rem;}
     .card{background-size: 400% !important;}
     .decor-rotate{height: 50px;}
     h4{font-size: 1rem !important;}
