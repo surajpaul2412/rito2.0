@@ -74,10 +74,10 @@
 .btn-secondary{text-transform: uppercase;font-size:17px;color: #000;background-color: #b56161 !important;border-radius: 8px;font-weight: 400;padding: 15px 0px;}
 .bg-parallax{background-image: url('../img/parallax.jpg');background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size:cover;padding:180px 0px;}
 .bg-parallax-about{background-image: url('../img/parallax-about.png');background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size:cover;padding:180px 0px;}
-#crad1{background: url('../img/card1.png');background-position: top;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
-#crad2{background: url('../img/card2.png');background-position: top;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
-#crad3{background: url('../img/card3.png');background-position: top;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
-#crad4{background: url('../img/card4.png');background-position: top;background-repeat: no-repeat;background-size: 100%;cursor: pointer;}
+#crad1{background: url('../img/card1.png');background-position: top;background-repeat: no-repeat;background-size: 125%;cursor: pointer;}
+#crad2{background: url('../img/card2.png');background-position: top;background-repeat: no-repeat;background-size: 125%;cursor: pointer;}
+#crad3{background: url('../img/card3.png');background-position: top;background-repeat: no-repeat;background-size: 125%;cursor: pointer;}
+#crad4{background: url('../img/card4.png');background-position: top;background-repeat: no-repeat;background-size: 125%;cursor: pointer;}
 #crad1:hover,#crad2:hover,#crad3:hover,#crad4:hover{
     background: #16151b !important;transition: 0.3s ease;transition-delay: 0.3s ease;
 }
