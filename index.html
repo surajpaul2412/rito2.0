@@ -24,7 +24,6 @@
 		 //      }, 100);
 		 //   	});
 
-
 			$(window).on('load',function(){
 			    var delayMs = 100; // delay in milliseconds
 			    
@@ -33,6 +32,16 @@
 			    }, delayMs);
 			});
 		</script>
+		<style>
+			.carousel-caption{
+				position: absolute !important;
+			    top: 0 !important;
+			    left: 12%; 
+			    z-index: 10 !important;
+			    text-align: left;
+			    color: #fff;
+			}
+		</style>
 </head>
 <body>
 	<header class="bg-theme-main">
@@ -70,8 +79,88 @@
 
 	<main>
 		<!-- home banner -->
-		<section class="bg-home">
-			<div class="container h-100 d-flex align-items-center">
+		<section class="">
+			<div id="demo-home" class="carousel slide" data-ride="carousel">
+			  <ul class="carousel-indicators">
+			    <li data-target="#demo-home" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo-home" data-slide-to="1"></li>
+			    <li data-target="#demo-home" data-slide-to="2"></li>
+			  </ul>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="img/parallax3.jpg" width="100%" height="100%">
+			      <div class="carousel-caption">
+				    <div class="container h-100 d-flex align-items-center">
+						<div class="d-block w-100 my-auto media-center">
+							<h1 class="heading font-normal text-white line-height-1 font-85">Bengal<br>Association</h1>
+							<p class="text-white py-3 d-none d-md-block">
+								At Bengal Association, we have realized the privilege to work<br/>
+								is a gift. The power to work is a blessing, and the love of work<br/>
+								is success.
+							</p>
+							<p class="text-white py-3 d-block d-md-none">
+								At Bengal Association, we have realized the privilege to work 
+								is a gift. The power to work is a blessing, and the love of work 
+								is success.
+							</p>
+							<a href="" class="btn btn-info text-capitalize w-20">Join Us</a>
+						</div>
+					</div>
+			      </div>   
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/parallax2.jpg" width="100%" height="100%">
+			      <div class="carousel-caption">
+				    <div class="container h-100 d-flex align-items-center">
+						<div class="d-block w-100 my-auto media-center">
+							<h1 class="heading font-normal text-white line-height-1 font-85">Asia's 3rd<br>Largest Bookfair</h1>
+							<p class="text-white py-3 d-none d-md-block">
+								Every year, Bengal Association organises Dilli Boi Mela (Book Fair)<br/>
+								in the Capital. The annual Boi Mela helps reinforce the fragile bond<br/>
+								between the book industry and the reading public.
+							</p>
+							<p class="text-white py-3 d-block d-md-none">
+								Every year, Bengal Association organises Dilli Boi Mela (Book Fair)<br/>
+								in the Capital. The annual Boi Mela helps reinforce the fragile bond<br/>
+								between the book industry and the reading public.
+							</p>
+							<a href="" class="btn btn-info text-capitalize w-20">Learn More</a>
+						</div>
+					</div>
+			      </div>    
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/parallax1.jpg" width="100%" height="100%">
+			      <div class="carousel-caption">
+				    <div class="container h-100 d-flex align-items-center">
+						<div class="d-block w-100 my-auto media-center">
+							<h1 class="heading font-normal text-white line-height-1 font-85">Bengali<br/>Film Festival</h1>
+							<p class="text-white py-3 d-none d-md-block">
+								Every year, Bengal Association organizes Cine Utsav - Film Festival<br/>
+								with selected Bengali Movies and Personalities for Bengalis living in Delhi NCR.
+							</p>
+							<p class="text-white py-3 d-block d-md-none">
+								Every year, Bengal Association organizes Cine Utsav - Film Festival<br/>
+								with selected Bengali Movies and Personalities for Bengalis living in Delhi NCR.
+							</p>
+							<a href="" class="btn btn-info text-capitalize w-20">Join Us</a>
+						</div>
+					</div>
+			      </div>    
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#demo-home" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo-home" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a>
+			</div>
+
+
+
+
+			<!-- <div class="container h-100 d-flex align-items-center">
 				<div class="d-block w-100 my-auto media-center">
 					<h1 class="heading font-normal text-white line-height-1 font-85">Bengal<br>Association</h1>
 					<p class="text-white py-3 d-none d-md-block">
@@ -86,7 +175,7 @@
 					</p>
 					<a href="" class="btn btn-info text-capitalize w-20">Join Us</a>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		<!-- palanquin -->
 		<section class="container py-5">
@@ -114,7 +203,8 @@
 		<!-- sanskriti bhawan trytry -->
 		<section class="py-5" style="background: #14255d;">
 			<div class="container">
-				<div class="slider-6 pointer">
+				<h1 class="heading font-normal text-white line-height-1 py-5" align="center">All you can get at<br>Banga Sanskriti Bhawan</h1>
+				<div class="slider-6 pointer pt-3">
 					<div class="slide px-4">
 						<div class="card bg-white p-4 border-none z-depth-3">
 							<div class="position-relative">
@@ -147,7 +237,7 @@
 							</div>
 							<h4 class="font-weight-bold pt-3 pb-2">A Bookshop with a large collection of choice</h4>
 							<p>
-								Muktadhara Pustak Bipani is stocked with 4000+ bengali books authored by both eminent and emerging writers from Bengal and all over India.
+								Muktadhara Pustak Bipani is stocked with 4000+ bengali books authored by both eminent and emerging writers from Bengal and all over India.<br><br>
 							</p>
 						</div>
 					</div>
@@ -159,7 +249,7 @@
 							</div>
 							<h4 class="font-weight-bold pt-3 pb-2">An Art Gallery with rare & precious collection</h4>
 							<p>
-								We have a rare collection of stunning paintings & sculptures from renowned artists that capture attention at first glance.
+								We have a rare collection of stunning paintings & sculptures from renowned artists that capture attention at first glance.<br><br><br>
 							</p>
 						</div>
 					</div>
@@ -171,7 +261,7 @@
 							</div>
 							<h4 class="font-weight-bold pt-3 pb-2">An open-air space for community gatherings</h4>
 							<p class="">
-								We have an open space for small gatherings of 50+, laden with greens, garden, thematic decor & parking space.
+								We have an open space for small gatherings of 50+, laden with greens, garden, thematic decor & parking space.<br><br><br>
 							</p>
 						</div>
 					</div>
@@ -185,10 +275,16 @@
 				<a href="" class="btn btn-info w-20">Learn more</a>
 			</div>
 		</section>
+		<section class="bg-parallax-about">
+			<div class="parallax-content container" align="center">
+				<h1 class="heading font-normal text-white py-5 font-60">Join us to educate<br/>the underprivileged</h1>
+				<a href="" class="btn btn-info w-20">Learn more</a>
+			</div>
+		</section>
 		<!-- heading -->
 		<section style="background: #5a4f49;">
 			<div class="py-5" align="center">
-				<h1 class="heading font-normal text-white py-5 font-60">Our work, initiatives & ventures</h1>
+				<h1 class="heading font-normal text-white py-5 font-50">Our work, initiatives & ventures</h1>
 			</div>
 		</section>
 		<!-- 4-cards -->
@@ -251,12 +347,12 @@
 				<p>Bengal Association has dreamt and is now working on realizing it. No dreams like this can be achieved with a singular effort but together we definitely can.</p>
 			</div>
 			<div class="container d-md-flex justify-centent-left d-block pt-5">
-				<img src="img/Secretary.png" width="80%" class="d-block mx-auto">
+				<img src="img/Secretary.png" width="70%" class="d-block mx-auto">
 				<div class="pl-5 font-18 text-italic media-p-0">
 					<p class="pt-sm-2">Bengal is one of the most culturally precious states of our country, and all of us at Bengal Association, Delhi are continously propagating the rich culture and heritage of Bengal in Delhi and NCR from the last seven decades. We are constantly moving ahead with a single goal in mind to build a Bengal outside Bengal by spreading its rich culture, tradition and most importantly the Bengali language.</p>
 					<p>I request you all to join hands with us in this pious initiative and resolve to continue the triumph of Bengali culture.<br/><br/>Shubhaya bhavatu.</p>
 					<p>
-						<strong>Tapan Sengupte, General Secretary, Bengal Association - Delhi</strong>
+						<strong>Tapan Sengupta, General Secretary, Bengal Association - Delhi</strong>
 					</p>
 				</div>
 			</div>
@@ -271,31 +367,25 @@
 							<div class="slide">
 								<img src="img/Layer1.png" width="82%" class="d-block mx-auto z-depth-2 border-top1">
 								<div class="text-white text-uppercase py-2 mx-4" align="center" style="background: #691b45;">
-									Banga Sanskriti Utsav
+									Banga Sanskriti<br>Utsav
 								</div>
 							</div>
 							<div class="slide">
 								<img src="img/Layer2.png" width="82%" class="d-block mx-auto z-depth-2 border-top1">
 								<div class="text-white text-uppercase py-2 mx-4" align="center" style="background: #691b45;">
-									Shera Bangali 2022
+									Shera Bangali<br>2022
 								</div>
 							</div>
 							<div class="slide">
 								<img src="img/Layer3.png" width="82%" class="d-block mx-auto z-depth-2 border-top1">
 								<div class="text-white text-uppercase py-2 mx-4" align="center" style="background: #691b45;">
-									Boi Mela 2022
+									Boi Mela<br>2022
 								</div>
 							</div>
 							<div class="slide">
 								<img src="img/Layer4.png" width="82%" class="d-block mx-auto z-depth-2 border-top1">
 								<div class="text-white text-uppercase py-2 mx-4" align="center" style="background: #691b45;">
-									Cine Utsav 2022
-								</div>
-							</div>
-							<div class="slide">
-								<img src="img/Layer2.png" width="82%" class="d-block mx-auto z-depth-2 border-top1">
-								<div class="text-white text-uppercase py-2 mx-4" align="center" style="background: #691b45;">
-									Shera Bangali 2022
+									Cine Utsav<br>2022
 								</div>
 							</div>
 							<div class="slide">
@@ -307,13 +397,13 @@
 							<div class="slide">
 								<img src="img/eve6.jpg" width="82%" class="d-block mx-auto z-depth-2 border-top1">
 								<div class="text-white text-uppercase py-2 mx-4" align="center" style="background: #691b45;">
-									Kobi Pranam
+									Kobi Pranam<br>2022
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 pt-5 font-17" align="center">
-						All events have been rescheduled according to NDMA guidelines regarding Covid 19 containment measures until any further annotation.
+						All events have been rescheduled according to DDMA guidelines regarding Covid 19 containment measures until any further annotation.
 					</div>
 				</div>
 			</div>
@@ -327,7 +417,7 @@
 						<div class="slider">
 							<div class="slide">
 								<img src="img/book4.png" width="75%" class="d-block mx-auto z-depth-3">
-								<div class="text-white pt-4 z-depth-0" align="center">1857 Drohkal</div>
+								<div class="text-white pt-4 z-depth-0" align="center">1857 Drohokal</div>
 							</div>
 							<div class="slide">
 								<img src="img/book3.png" width="75%" class="d-block mx-auto z-depth-3">
@@ -375,8 +465,8 @@
 					<div class="col-md-6 col-12">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.814028798508!2d77.2049972!3d28.6311555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3a9bb1b5ea11b24!2sMuktadhara-%20Banga%20Sanskriti%20Bhawan!5e0!3m2!1sen!2sin!4v1641718397560!5m2!1sen!2sin" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						<ul class="list-unstyled pt-2">
-							<li class="pt-1"><a href=""><img class="ml-2 mr-2" src="img/icons/phone-call.png" width="20px"> 9999-000-999</a></li>
-							<li class="pt-1"><a href=""><img class="mr-2" src="img/icons/email.png" width="28px"> example@association.com</a></li>
+							<li class="pt-1"><a href="" style="color: #6ad5f4 !important;"><img class="ml-2 mr-2" src="img/icons/phone-call.png" width="20px"> 8920-228-605</a></li>
+							<li class="pt-1"><a href="" style="color: #6ad5f4 !important;"><img class="mr-2" src="img/icons/email.png" width="28px"> bengalassociation1819@gmail.com</a></li>
 						</ul>
 					</div>
 					<div class="col-md-6 col-12">
