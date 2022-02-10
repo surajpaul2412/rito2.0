@@ -122,13 +122,13 @@
 							 <!-- thumnails in a row -->
 							<div class="row mx-0">
 							  <div class="column">
-							    <img class="slide-thumbnail" src="img/facility/1.png" onclick="currentSlide(1)" alt="Caption One">
+							    <img class="slide-thumbnail" src="img/facility/1.png" onclick="currentSlide(1)">
 							  </div>
 							  <div class="column">
-							    <img class="slide-thumbnail" src="img/facility/2.png" onclick="currentSlide(2)" alt="Caption Two">
+							    <img class="slide-thumbnail" src="img/facility/2.png" onclick="currentSlide(2)">
 							  </div>
 							  <div class="column">
-							    <img class="slide-thumbnail" src="img/facility/3.png" onclick="currentSlide(3)" alt="Caption Three">
+							    <img class="slide-thumbnail" src="img/facility/3.png" onclick="currentSlide(3)">
 							  </div>
 							</div>
 <!-- end gallery -->
@@ -148,7 +148,30 @@
 				<div class="row">
 					<div class="col-md-6 col-12 py-4 d-none d-md-block">
 						<!-- trytry -->
-						<img src="img/facility/Group 21.png" class="pt-2" width="100%">
+<div class="holder">
+  <div class="slides1">
+    <img src="img/facility/1.png" alt="" />
+  </div>
+  <div class="slides1">
+    <img src="img/facility/2.png">
+  </div>
+  <div class="slides1">
+    <img src="img/facility/3.png">
+  </div>
+</div>
+
+ <!-- thumnails in a row -->
+<div class="row mx-0">
+  <div class="column">
+    <img class="slide-thumbnail1" src="img/facility/1.png" onclick="currentSlide1(4)">
+  </div>
+  <div class="column">
+    <img class="slide-thumbnail1" src="img/facility/2.png" onclick="currentSlide1(5)">
+  </div>
+  <div class="column">
+    <img class="slide-thumbnail1" src="img/facility/3.png" onclick="currentSlide1(6)">
+  </div>
+</div>
 					</div>
 					<div class="col-md-6 col-12 py-4">
 						<h1 class="heading font-normal">Conference Room</h1>
@@ -499,6 +522,38 @@
 		  var i;
 		  var slides = document.getElementsByClassName("slides");
 		  var dots = document.getElementsByClassName("slide-thumbnail");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  console.log(slideIndex);
+
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		      // slides[i].style.display = "inline";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  // slides[slideIndex-1].style.display = "inline";
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide1(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("slides1");
+		  var dots = document.getElementsByClassName("slide-thumbnail1");
 		  if (n > slides.length) {slideIndex = 1}
 		  if (n < 1) {slideIndex = slides.length}
 		  console.log(slideIndex);
