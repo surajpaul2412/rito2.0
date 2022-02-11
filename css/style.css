@@ -36,7 +36,7 @@
 .font-25{font-size: 25px;}
 .font-50{font-size: 50px;}
 .font-60{font-size: 60px;}
-.font-85{font-size: 65px;}
+.font-85{font-size: 55px;}
 .logo-shadow{box-shadow: 2px 2px 22px 14px #062156;border-radius: 50%;}
 .border-py{border-top: 5px solid #000;border-bottom: 5px solid #000;}
 .footer-link h4{font-size: 1.3rem;}
@@ -65,7 +65,26 @@
 .bg-color1{background: #dfdfe9;border: 1px solid #000;border-radius: 14px !important;}
 .bg-color2{background: #eafed9;border: 1px solid #000;border-radius: 14px !important;}
 .home-control::placeholder{color: #fff;}
-.carousel-indicators{bottom: -70px !important;}
+.carousel-indicators{
+  /* bottom: -70px !important; */
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px; /* change width */
+  height: 10px; /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  border-radius: 100%; 
+}
 .slick-next::before, .slick-prev::before {color: white;}
 .decor1{background-image: url('../img/decor.png');height: 150px;background-size: 100%;background-position: top;}
 .decor1-inside{background-image: url('../img/decor.png');height: 150px;background-size: 100%;background-position: top;}

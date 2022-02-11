@@ -37,19 +37,19 @@
 			      <div class="dropdown-menu">
 			        <a class="dropdown-item" href="about.html">About Us</a>
 			        <a class="dropdown-item" href="activities.html">Activities</a>
-			        <a class="dropdown-item" href="comming-soon.html">Gallery</a>
-			        <a class="dropdown-item" href="comming-soon.html">Annual Report</a>
-			        <a class="dropdown-item" href="comming-soon.html">Contact Us</a>
+			        <a class="dropdown-item" href="comming-soon.html" style="color: grey !important;">Gallery</a>
+			        <a class="dropdown-item" href="comming-soon.html" style="color: grey !important;">Annual Report</a>
+			        <a class="dropdown-item" href="comming-soon.html" style="color: grey !important;">Contact Us</a>
 			      </div>
 			    </li>
 	          <li class="nav-item">
 	            <a class="nav-link" href="facilities.html">facilities</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link" href="comming-soon.html">publication</a>
+	            <a class="nav-link" href="comming-soon.html" style="color: grey !important;">publication</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link" href="comming-soon.html">events</a>
+	            <a class="nav-link" href="comming-soon.html" style="color: grey !important;">events</a>
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link" href="membership.html">membership</a>
@@ -59,7 +59,14 @@
 	    </div>
 	  </nav>
 	</header>
-
+	<div class="float-sm">
+		<div class="fl-fl float-fb">
+			<img src="img/pdf.png" class="fa" width="28px" style="filter: invert(1);">
+			<a href="pdf/Febnuary2022.pdf" download> Download Sangbad !</a>
+		</div>
+	</div>
+	<!-- scroll btn -->
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 	<main>
 		<!-- home banner -->
 		<section class="bg-activities-banner">
@@ -83,7 +90,7 @@
 							We have been running a primary school at Madanpur Khadar focussed to provide basic education to 100+ children of specially migrant families with a small group of teachers and well wishers spreading the light of knowledge in these young minds. Most of the students are from Bengali families and come from a harsh economic condition, aspiring to break free of social boundaries to be granted in govt. schools. We also provide them with books, stationaries, uniform, along with mentorship and guidance to help them shine bighter.
 						</p>
 						<div>
-							<a href="" class="btn btn-info w-50">Support Us</a>
+							<a href="" class="btn btn-info w-50" style="margin-left: -2px;">Support Us</a>
 						</div>						
 					</div>
 				</div>
@@ -99,7 +106,7 @@
 							We have been organising regular Medical Health Camps in various regions of Central Delhi to facilitate and help Senior Citizens over the years.<br/>We have also been instrumental in facilitating educational scholarships awards to meritorious students from 8 bengali schools in Delhi. More over we are keen to help individuals contributing efforts in propagating Bengal's culture.
 						</p>
 						<div>
-							<a href="" class="btn btn-info w-50">Support Us</a>
+							<a href="" class="btn btn-info w-50" style="margin-left: -2px;">Support Us</a>
 						</div>
 					</div>
 				</div>
@@ -115,7 +122,7 @@
 							We celebrate the existence of our Praner Manush Kobiguru Rabindranath Thakur in our lives through Kobi Pronam, and Baishe Srabon.<br/>We celebrate Theatre festivals and Cine Utsav for movie and theatre buffs.<br/>We get the best of Bangla books in Boi Mela along with several musical events. We also organize and clebrate Bijoya Sammelani, and our recent initiative Baul Mela was a great success.
 						</p>
 						<div>
-							<a href="" class="btn btn-info w-50">Support Us</a>
+							<a href="" class="btn btn-info w-50" style="margin-left: -2px;">Support Us</a>
 						</div>
 					</div>
 				</div>
@@ -131,7 +138,7 @@
 							Since the last 44 years, we have been publishing and promoting our magazine, <strong>Digangan</strong>. It has received recognition from the National Book Trust as a "Little Magazine". We also promote and feature books from various expatriate writers and Bengali Authors..
 						</p>
 						<div>
-							<a href="" class="btn btn-info w-50">Support Us</a>
+							<a href="" class="btn btn-info w-50" style="margin-left: -2px;">Support Us</a>
 						</div>
 					</div>
 				</div>
@@ -290,6 +297,21 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	<script>
+		$(document).ready(function(){ 
+			$(window).scroll(function(){ 
+				if ($(this).scrollTop() > 100) { 
+					$('#scroll').fadeIn(); 
+				} else { 
+					$('#scroll').fadeOut(); 
+				} 
+			}); 
+			$('#scroll').click(function(){ 
+				$("html, body").animate({ scrollTop: 0 }, 600); 
+				return false; 
+			}); 
+		});
+		</script>
 	<script>
 		$(document).ready(function () {
 		  var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
